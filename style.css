@@ -1,16 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 h1{
- color: aqua;
- background-color: gold;
- text-align: center;
- padding-bottom: 30px;
- padding-top: 30px;
+    color: #424242;
+    margin: 0 0 10px;
+    font-weight: 600;
+    background-color: gold;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 48px;
+    line-height: 60px;
+    font-family: 'Rowdies', cursive;
 }
 body{
     background-color: black;
 }
-p img{
-     margin-left: 63px;
+.books p{
+    margin-top: 50px;
+    align-items: center;
+    margin-left: 11%;
+    margin-right: 11%;
+}
+.books p img{
+    margin-left: 3%;
     margin-bottom: 40px;
     align-items: center;
-
 }
