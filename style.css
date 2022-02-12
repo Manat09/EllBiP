@@ -16,7 +16,7 @@ h1{
     /*font-size: 48px;*/
     font-size:3.2vw;
     line-height: 60px;
-    font-family: 'Rowdies', cursive;
+    font-family: 'Ubuntu Mono', monospace;
     width: 100%;
 }
 .typewriter{
@@ -72,7 +72,9 @@ body{
 
 
 h2{
-    font-family: 'Rowdies', cursive;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-bottom: 10px;
+    font-size: 3vw;
 }
 /* Remove margins and padding from the list */
 ul {
@@ -88,6 +90,7 @@ ul li {
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
+    font-family: 'Ubuntu Mono', monospace;
 
     /* make the list items unselectable */
     -webkit-user-select: none;
@@ -161,7 +164,8 @@ ul li.checked::before {
     height: 55px;
     line-height: 30px;
     font-size: 1.5vw;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
     background: linear-gradient(45deg, transparent 5%, black 5%);
     border: 0;
     color: #fff;
@@ -259,7 +263,7 @@ input {
     padding: 10px;
     float: left;
     font-size: 16px;
-    font-family: 'Rowdies', cursive;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 /* Style the "Add" button */
@@ -269,12 +273,12 @@ input {
     background: black;
     color: #fff;
     float: left;
-    font-family: 'Rowdies', cursive;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 .addBtn:hover {
@@ -391,4 +395,5 @@ input {
         text-shadow: -5px 0 rgba(244,67,54,1), 5px -4px rgba(33,150,243,1);
     }
 }
+
 
