@@ -134,7 +134,7 @@ ul li.checked::before {
 
 .bbbt,
 .bbbt:after {
-    width: 9.5vw;
+    width: 10.74vw;
     height: 55px;
     line-height: 30px;
     font-size: 1.5vw;
@@ -221,7 +221,7 @@ ul li.checked::before {
 @media (min-width: 768px) {
     .bbbt,
     .bbbt:after {
-        width: 9.5vw;
+        width: 10.74vw;
         height: 55px;
         line-height: 30px;
     }
@@ -310,3 +310,13 @@ input {
 .dark-mode9 .go, .dark-mode9 .cpp,.dark-mode9 .python,.dark-mode9 .js,.dark-mode9 .java,.dark-mode9 .ruby,.dark-mode9 .php,.dark-mode9 .rust{ display: none; }
 .dark-mode9 .prog{ display: initial;}
 .dark-mode9 .bbbt.pppp, .dark-mode9 .bbbt.pppp:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+
+
+.books p img:hover{
+    width: 270px;
+    height: 380px;
+    transition: 0.5s;
+}
+.books p img:not(:hover) {
+    transition: 0.5s;
+}
