@@ -3,8 +3,8 @@
     padding: 0;
 }
 h1{
-    position: -webkit-sticky;
-    position: sticky;
+    /*position: -webkit-sticky;*/
+    /*position: sticky;*/
     top: 0;
     color: #424242;
     margin: 0 0 10px;
@@ -13,8 +13,8 @@ h1{
     text-align: center;
     padding-bottom: 30px;
     padding-top: 30px;
-    font-size: 48px;
-    /*font-size:3.2vw;*/
+    /*font-size: 48px;*/
+    font-size:3.2vw;
     line-height: 60px;
     font-family: 'Rowdies', cursive;
 }
@@ -132,6 +132,101 @@ ul li.checked::before {
     clear: both;
 }
 
+.bbbt,
+.bbbt:after {
+    width: 9.5vw;
+    height: 55px;
+    line-height: 30px;
+    font-size: 1.5vw;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, gold 5%);
+    border: 0;
+    color: #424242;
+    letter-spacing: 3px;
+    box-shadow: 6px 0px 0px red;
+    outline: transparent;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.bbbt:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: 'MIKASA ACKERMAN';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+}
+.bbbt:hover:after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
+}
+@media (min-width: 768px) {
+    .bbbt,
+    .bbbt:after {
+        width: 9.5vw;
+        height: 55px;
+        line-height: 30px;
+    }
+}
+
 /* Style the input */
 input {
     margin: 0;
@@ -167,12 +262,51 @@ input {
 .progress-container {
     width: 100%;
     height: 8px;
-    background: gold;
+    background: #424242;
+    position: fixed;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
     height: 8px;
-    background: #424242;
+    background: gold;
     width: 0%;
 }
+
+/*.change-block{display: flex;background-color: #00EAFF;transition: 0.5s;}
+/*.dark-mode{background-color: rgb(2, 0, 3); transition: 0.5s;}*/
+.dark-mode .go, .dark-mode .cpp,.dark-mode .python,.dark-mode .js,.dark-mode .java,.dark-mode .ruby,.dark-mode .php,.dark-mode .prog{ display: none; }
+.dark-mode .rust{ display: initial;}
+.dark-mode .bbbt.rr, .dark-mode .bbbt.rr:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+
+.dark-mode2 .rust, .dark-mode2 .cpp,.dark-mode2 .python,.dark-mode2 .js,.dark-mode2 .java,.dark-mode2 .ruby,.dark-mode2 .php,.dark-mode2 .prog{ display: none; }
+.dark-mode2 .go{ display: initial;}
+.dark-mode2 .bbbt.gg, .dark-mode2 .bbbt.gg:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+
+.dark-mode3 .go, .dark-mode3 .rust,.dark-mode3 .python,.dark-mode3 .js,.dark-mode3 .java,.dark-mode3 .ruby,.dark-mode3 .php,.dark-mode3 .prog{ display: none; }
+.dark-mode3 .cpp{ display: initial;}
+.dark-mode3 .bbbt.cc, .dark-mode3 .bbbt.cc:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+
+.dark-mode4 .go, .dark-mode4 .cpp,.dark-mode4 .rust,.dark-mode4 .js,.dark-mode4 .java,.dark-mode4 .ruby,.dark-mode4 .php,.dark-mode4 .prog{ display: none; }
+.dark-mode4 .python{ display: initial;}
+.dark-mode4 .bbbt.pp, .dark-mode4 .bbbt.pp:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+
+.dark-mode5 .go, .dark-mode5 .cpp,.dark-mode5 .python,.dark-mode5 .rust,.dark-mode5 .java,.dark-mode5 .ruby,.dark-mode5 .php,.dark-mode5 .prog{ display: none; }
+.dark-mode5 .js{ display: initial;}
+.dark-mode5 .bbbt.jj, .dark-mode5 .bbbt.jj:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+
+.dark-mode6 .go, .dark-mode6 .cpp,.dark-mode6 .python,.dark-mode6 .js,.dark-mode6 .rust,.dark-mode6 .ruby,.dark-mode6 .php,.dark-mode6 .prog{ display: none; }
+.dark-mode6 .java{ display: initial;}
+.dark-mode6 .bbbt.jjj, .dark-mode6 .bbbt.jjj:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+
+.dark-mode7 .go, .dark-mode7 .cpp,.dark-mode7 .python,.dark-mode7 .js,.dark-mode7 .java,.dark-mode7 .rust,.dark-mode7 .php,.dark-mode7 .prog{ display: none; }
+.dark-mode7 .ruby{ display: initial;}
+.dark-mode7 .bbbt.rrr, .dark-mode7 .bbbt.rrr:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+
+.dark-mode8 .go, .dark-mode8 .cpp,.dark-mode8 .python,.dark-mode8 .js,.dark-mode8 .java,.dark-mode8 .ruby,.dark-mode8 .rust,.dark-mode8 .prog{ display: none; }
+.dark-mode8 .php{ display: initial;}
+.dark-mode8 .bbbt.ppp, .dark-mode8 .bbbt.ppp:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+
+.dark-mode9 .go, .dark-mode9 .cpp,.dark-mode9 .python,.dark-mode9 .js,.dark-mode9 .java,.dark-mode9 .ruby,.dark-mode9 .php,.dark-mode9 .rust{ display: none; }
+.dark-mode9 .prog{ display: initial;}
+.dark-mode9 .bbbt.pppp, .dark-mode9 .bbbt.pppp:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}

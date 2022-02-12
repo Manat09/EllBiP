@@ -55,11 +55,49 @@ function newElement() {
 }
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunctionn()};
 
-function myFunction() {
+function myFunctionn() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+function myFunction2() {
+    var element = document.body;
+    element.classList.toggle("dark-mode2");
+}
+function myFunction3() {
+    var element = document.body;
+    element.classList.toggle("dark-mode3");
+}
+function myFunction4() {
+    var element = document.body;
+    element.classList.toggle("dark-mode4");
+}
+function myFunction5() {
+    var element = document.body;
+    element.classList.toggle("dark-mode5");
+}
+function myFunction6() {
+    var element = document.body;
+    element.classList.toggle("dark-mode6");
+}
+function myFunction7() {
+    var element = document.body;
+    element.classList.toggle("dark-mode7");
+}
+function myFunction8() {
+    var element = document.body;
+    element.classList.toggle("dark-mode8");
+}
+function myFunction9() {
+    var element = document.body;
+    element.classList.toggle("dark-mode9");
 }
