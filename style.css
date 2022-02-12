@@ -6,7 +6,7 @@ h1{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    color: #424242;
+    color: #fff;
     margin: 0 0 10px;
     font-weight: 600;
     /*background-color: ;*/
@@ -20,7 +20,7 @@ h1{
     width: 100%;
 }
 .typewriter{
-    background-color: gold;
+    background-color: black;
 }
 .typewriter h1 {
     /*max-height:*/
@@ -49,28 +49,13 @@ body{
     /*background-color: black;*/
     animation: scroll 70s linear infinite;
     /*background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;*/
-    background: url("https://i.pinimg.com/originals/36/8d/0a/368d0ab77b3d7e8b58c2cd4b5f61ccd0.png"), #111111;
-    /*background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/08c15881-1bbf-44cb-9933-e0a294689b9e/duvev-507f6999-74f0-43d5-9ccd-7a9b42e591c4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4YzE1ODgxLTFiYmYtNDRjYi05OTMzLWUwYTI5NDY4OWI5ZVwvZHV2ZXYtNTA3ZjY5OTktNzRmMC00M2Q1LTljY2QtN2E5YjQyZTU5MWM0LmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl19.cs7zHXnLVP-hV0woGm5yU9Q8RnbIdQQjRMBk-euh3Kk"), #111111;*/
+    /*background: url("https://i.pinimg.com/originals/36/8d/0a/368d0ab77b3d7e8b58c2cd4b5f61ccd0.png"), #111111;*/
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/08c15881-1bbf-44cb-9933-e0a294689b9e/duvev-507f6999-74f0-43d5-9ccd-7a9b42e591c4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4YzE1ODgxLTFiYmYtNDRjYi05OTMzLWUwYTI5NDY4OWI5ZVwvZHV2ZXYtNTA3ZjY5OTktNzRmMC00M2Q1LTljY2QtN2E5YjQyZTU5MWM0LmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl19.cs7zHXnLVP-hV0woGm5yU9Q8RnbIdQQjRMBk-euh3Kk"), #111111;
 }
 @keyframes scroll {
     100%{
         background-position:0px -3000px;
     }
-}
-
-.footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    background-color: gold;
-    color: #424242;
-    text-align: center;
-    font-family: 'Rowdies', cursive;
-    font-size: 48px;
-    line-height: 60px;
-    font-weight: 600;
 }
 
 .books p{
@@ -177,11 +162,11 @@ ul li.checked::before {
     line-height: 30px;
     font-size: 1.5vw;
     font-family: 'Bebas Neue', sans-serif;
-    background: linear-gradient(45deg, transparent 5%, gold 5%);
+    background: linear-gradient(45deg, transparent 5%, black 5%);
     border: 0;
-    color: #424242;
+    color: #fff;
     letter-spacing: 3px;
-    box-shadow: 6px 0px 0px red;
+    box-shadow: 6px 0px 0px white;
     outline: transparent;
     position: relative;
     user-select: none;
@@ -281,8 +266,8 @@ input {
 .addBtn {
     padding: 8.7px;
     width: 20%;
-    background: gold;
-    color: #424242;
+    background: black;
+    color: #fff;
     float: left;
     font-family: 'Rowdies', cursive;
     text-align: center;
@@ -300,14 +285,14 @@ input {
 .progress-container {
     width: 100%;
     height: 8px;
-    background: #424242;
+    background: black;
     position: fixed;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
     height: 8px;
-    background: gold;
+    background: white;
     width: 0%;
 }
 
@@ -315,39 +300,39 @@ input {
 /*.dark-mode{background-color: rgb(2, 0, 3); transition: 0.5s;}*/
 .dark-mode .go, .dark-mode .cpp,.dark-mode .python,.dark-mode .js,.dark-mode .java,.dark-mode .ruby,.dark-mode .php,.dark-mode .prog{ display: none; }
 .dark-mode .rust{ display: initial;}
-.dark-mode .bbbt.rr, .dark-mode .bbbt.rr:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+.dark-mode .bbbt.rr, .dark-mode .bbbt.rr:after{ background: linear-gradient(45deg, transparent 5%, white 5%); color: black}
 
 .dark-mode2 .rust, .dark-mode2 .cpp,.dark-mode2 .python,.dark-mode2 .js,.dark-mode2 .java,.dark-mode2 .ruby,.dark-mode2 .php,.dark-mode2 .prog{ display: none; }
 .dark-mode2 .go{ display: initial;}
-.dark-mode2 .bbbt.gg, .dark-mode2 .bbbt.gg:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+.dark-mode2 .bbbt.gg, .dark-mode2 .bbbt.gg:after{ background: linear-gradient(45deg, transparent 5%, white 5%); color: black}
 
 .dark-mode3 .go, .dark-mode3 .rust,.dark-mode3 .python,.dark-mode3 .js,.dark-mode3 .java,.dark-mode3 .ruby,.dark-mode3 .php,.dark-mode3 .prog{ display: none; }
 .dark-mode3 .cpp{ display: initial;}
-.dark-mode3 .bbbt.cc, .dark-mode3 .bbbt.cc:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+.dark-mode3 .bbbt.cc, .dark-mode3 .bbbt.cc:after{ background: linear-gradient(45deg, transparent 5%, white 5%); color: black}
 
 .dark-mode4 .go, .dark-mode4 .cpp,.dark-mode4 .rust,.dark-mode4 .js,.dark-mode4 .java,.dark-mode4 .ruby,.dark-mode4 .php,.dark-mode4 .prog{ display: none; }
 .dark-mode4 .python{ display: initial;}
-.dark-mode4 .bbbt.pp, .dark-mode4 .bbbt.pp:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+.dark-mode4 .bbbt.pp, .dark-mode4 .bbbt.pp:after{ background: linear-gradient(45deg, transparent 5%, white 5%); color: black}
 
 .dark-mode5 .go, .dark-mode5 .cpp,.dark-mode5 .python,.dark-mode5 .rust,.dark-mode5 .java,.dark-mode5 .ruby,.dark-mode5 .php,.dark-mode5 .prog{ display: none; }
 .dark-mode5 .js{ display: initial;}
-.dark-mode5 .bbbt.jj, .dark-mode5 .bbbt.jj:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+.dark-mode5 .bbbt.jj, .dark-mode5 .bbbt.jj:after{ background: linear-gradient(45deg, transparent 5%, white 5%); color: black}
 
 .dark-mode6 .go, .dark-mode6 .cpp,.dark-mode6 .python,.dark-mode6 .js,.dark-mode6 .rust,.dark-mode6 .ruby,.dark-mode6 .php,.dark-mode6 .prog{ display: none; }
 .dark-mode6 .java{ display: initial;}
-.dark-mode6 .bbbt.jjj, .dark-mode6 .bbbt.jjj:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+.dark-mode6 .bbbt.jjj, .dark-mode6 .bbbt.jjj:after{ background: linear-gradient(45deg, transparent 5%, white 5%); color: black}
 
 .dark-mode7 .go, .dark-mode7 .cpp,.dark-mode7 .python,.dark-mode7 .js,.dark-mode7 .java,.dark-mode7 .rust,.dark-mode7 .php,.dark-mode7 .prog{ display: none; }
 .dark-mode7 .ruby{ display: initial;}
-.dark-mode7 .bbbt.rrr, .dark-mode7 .bbbt.rrr:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+.dark-mode7 .bbbt.rrr, .dark-mode7 .bbbt.rrr:after{ background: linear-gradient(45deg, transparent 5%, white 5%); color: black}
 
 .dark-mode8 .go, .dark-mode8 .cpp,.dark-mode8 .python,.dark-mode8 .js,.dark-mode8 .java,.dark-mode8 .ruby,.dark-mode8 .rust,.dark-mode8 .prog{ display: none; }
 .dark-mode8 .php{ display: initial;}
-.dark-mode8 .bbbt.ppp, .dark-mode8 .bbbt.ppp:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+.dark-mode8 .bbbt.ppp, .dark-mode8 .bbbt.ppp:after{ background: linear-gradient(45deg, transparent 5%, white 5%); color: black}
 
 .dark-mode9 .go, .dark-mode9 .cpp,.dark-mode9 .python,.dark-mode9 .js,.dark-mode9 .java,.dark-mode9 .ruby,.dark-mode9 .php,.dark-mode9 .rust{ display: none; }
 .dark-mode9 .prog{ display: initial;}
-.dark-mode9 .bbbt.pppp, .dark-mode9 .bbbt.pppp:after{ background: linear-gradient(45deg, transparent 5%, #FF8C00 5%);}
+.dark-mode9 .bbbt.pppp, .dark-mode9 .bbbt.pppp:after{ background: linear-gradient(45deg, transparent 5%, white 5%); color: black}
 
 
 .books p img:hover{
@@ -360,5 +345,50 @@ input {
 }
 
 
-
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-family: 'Rowdies', cursive;
+    font-size: 1vw;
+    /*line-height: 60px;*/
+    /*font-weight: 600;*/
+}
+.container {
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    padding: 20px;
+    animation: icon3d 200ms 10;
+    color: #fff;
+}
+.icon:hover {
+    animation: icon3d 200ms infinite;
+}
+@keyframes icon3d {
+    0% {
+        text-shadow: 5px 4px rgba(244,67,54,1), -5px -6px rgba(33,150,243,1);
+    }
+    25% {
+        text-shadow: -5px -6px rgba(244,67,54,1), 5px 4px rgba(33,150,243,1);
+    }
+    50% {
+        text-shadow: 5px -4px rgba(244,67,54,1), -8px 4px rgba(33,150,243,1);
+    }
+    75% {
+        text-shadow: -8px -4px rgba(244,67,54,1), -5px -4px rgba(33,150,243,1);
+    }
+    100% {
+        text-shadow: -5px 0 rgba(244,67,54,1), 5px -4px rgba(33,150,243,1);
+    }
+}
 
